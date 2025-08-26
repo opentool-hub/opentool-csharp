@@ -23,7 +23,7 @@ namespace OpenToolSDK.DotNet.Daemon
             _port = port.HasValue && port > 0 ? port.Value : DAEMON_DEFAULT_PORT;
             _prefix = DAEMON_DEFAULT_PREFIX;
 
-            string baseUrl = $"{_protocol}://{_host}:{_port}{_prefix}";
+            string baseUrl = $"{_protocol}://{_host}:{_port}{_prefix}/";
             _httpClient = new HttpClient
             {
                 BaseAddress = new Uri(baseUrl)
@@ -40,7 +40,7 @@ namespace OpenToolSDK.DotNet.Daemon
                 string json = registerInfo.ToJson();
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await _httpClient.PostAsync("/register", content);
+                HttpResponseMessage response = await _httpClient.PostAsync("register", content);
                 response.EnsureSuccessStatusCode();
 
                 string resultJson = await response.Content.ReadAsStringAsync();

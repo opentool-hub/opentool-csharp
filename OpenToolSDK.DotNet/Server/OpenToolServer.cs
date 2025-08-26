@@ -70,7 +70,7 @@ namespace OpenToolSDK.DotNet.Server
                 var registerInfo = new RegisterInfo
                 {
                     File = System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName,
-                    Host = Dns.GetHostName(),
+                    Host = IPAddress.Loopback.ToString(),
                     Port = _port,
                     Prefix = _prefix,
                     ApiKeys = _apiKeys,
