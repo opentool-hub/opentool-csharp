@@ -14,7 +14,7 @@ The OpenTool SDK for .NET Framework supports Tool Server and Client communicatio
 Add the following dependency in your NuGet configuration:
 
 ```
-OpenToolSDK
+OpenToolSDK.Fx
 ```
 
 ## Examples

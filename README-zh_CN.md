@@ -14,7 +14,7 @@ OpenTool 的 .NET Framework SDK，支持 JSON-RPC 协议的 Tool Server 与 Clie
 在 `NuGet` 文件中增加如下依赖：
 
 ```
-OpenToolSDK
+OpenToolSDK.Fx
 ```
 
 ## 示例
