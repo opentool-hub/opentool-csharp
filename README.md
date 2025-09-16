@@ -4,6 +4,8 @@ English | [中文](README-zh_CN.md)
 
 The OpenTool SDK for .NET Framework supports Tool Server and Client communication over the JSON-RPC protocol, implementing the core capabilities defined in the OpenTool specification.
 
+If you need to use .NET 8 or later, please use [opentool-csharp-net](http://github.com/opentool-hub/opentool-csharp-net).
+
 ## Features
 
 * OpenTool JSON parser
